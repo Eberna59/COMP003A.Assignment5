@@ -25,7 +25,11 @@
                 if (processedValue >= 20)
                 {
                     Console.WriteLine("The result is 20 or more");
-                } 
+                }
+                else
+                {
+                    Console.WriteLine("The result is less than 20");
+                }
             }
 
         }
