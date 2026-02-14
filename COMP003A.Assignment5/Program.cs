@@ -51,5 +51,10 @@
             Console.WriteLine("Welcome to the Number Mod Program");
             Console.WriteLine();
         }
+
+        static void DisplayEntry(string name, int number)
+        {
+            Console.WriteLine("\nHello " + name + ", you entered: " + number);
+        }
     }
 }
