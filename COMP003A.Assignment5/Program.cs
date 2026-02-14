@@ -4,7 +4,27 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            bool continueProgram = true;
+
+            while (continueProgram)
+            {
+                ShowGreeting();
+
+                Console.Write("Enter your name: ");
+                string personName = Console.ReadLine();
+
+                Console.Write("Enter a whole number: ");
+                int userNumber = int.Parse(Console.ReadLine());
+
+                DisplayEntry(personName, userNumber);
+
+                int processedValue = ModifyNumber(userNumber);
+
+                Console.WriteLine("Calculated result: " + processedValue);
+
+
+            }
+
         }
     }
 }
