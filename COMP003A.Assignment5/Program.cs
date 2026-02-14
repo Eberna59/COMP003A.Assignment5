@@ -22,7 +22,10 @@
 
                 Console.WriteLine("Calculated result: " + processedValue);
 
-
+                if (processedValue >= 20)
+                {
+                    Console.WriteLine("The result is 20 or more");
+                } 
             }
 
         }
