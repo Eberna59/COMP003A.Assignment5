@@ -30,8 +30,26 @@
                 {
                     Console.WriteLine("The result is less than 20");
                 }
+
+                Console.WriteLine("\nWould you like to try again? (y/n: )");
+                string response = Console.ReadLine();
+
+                if (response.ToLower() != "y")
+                {
+                    continueProgram = false;
+                }
+
+                Console.WriteLine();
             }
 
+            Console.WriteLine("Program finished.");
+
+        }
+
+        static void ShowGreeting()
+        {
+            Console.WriteLine("Welcome to the Number Mod Program");
+            Console.WriteLine();
         }
     }
 }
