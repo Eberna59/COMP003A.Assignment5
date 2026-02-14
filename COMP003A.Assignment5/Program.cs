@@ -56,5 +56,11 @@
         {
             Console.WriteLine("\nHello " + name + ", you entered: " + number);
         }
+
+        static int ModifyNumber(int value)
+        {
+            int updated = value * 2;
+            return updated;
+        }
     }
 }
